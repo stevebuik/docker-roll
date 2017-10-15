@@ -16,6 +16,10 @@ This image includes the following CLI tools
 
 Has been tested/use in Bitbucket pipelines but it can be used in any Docker environment.
 
+This image is available on Dockerhub at https://hub.docker.com/r/steveb8n/roll
+i.e. use **steveb8n/roll** as your Docker tag.
+Or, alternatively, build it yourself from source and push to your own Docker repo.
+
 **AWS Profiles**
 
 Roll uses the *default* profile when invoking the *aws* CLI.
