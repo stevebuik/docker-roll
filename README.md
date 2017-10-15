@@ -1,6 +1,9 @@
-# Docker image for Juxt/Roll deployments
+# Docker image for Juxt Roll deployments
 
-Includes the following CLI tools
+Useful when running [Juxt Roll](https://github.com/juxt/roll) deployments in CI systems,
+or on localhost without needing to install all the tools below.
+
+This image includes the following CLI tools
 
 * Lumo
 * Mach
@@ -11,7 +14,7 @@ Includes the following CLI tools
 
 ## Deploying using this image
 
-The initial use of this image was in Bitbucket pipelines but it can be used in any Docker environment.
+Has been tested/use in Bitbucket pipelines but it can be used in any Docker environment.
 
 **AWS Profiles**
 
