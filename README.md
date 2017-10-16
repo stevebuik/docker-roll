@@ -64,3 +64,16 @@ In other words, the commands for an automated roll deploy using this image are:
 `terraform plan`
 
 `terraform apply`
+
+## Bitbucket Pipelines Usage
+
+The example Machfile uses `git describe` to generate a unique artifact name for the uberjar.
+This can fail if the `git clone` performed by the CI service is *shallow* i.e. not a full clone.
+This can be fixed in the bitbucket-pipelines.yml file by configuring a full clone.
+
+<pre><code>
+image: steveb8n/roll
+clone:
+  depth: full
+</code></pre>
+
